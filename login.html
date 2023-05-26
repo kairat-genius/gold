@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <title>Gold</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+<div class="pushmenu pushmenu-left cart-box-container">
+    <div class="cart-list">
+        <span class="close-left js-close">x</span>
+        <h3 class="cart-title">Моя корзина</h3>
+        <div class="nocart-list">
+            <div class="empty-cart">
+                <h4 class="nocart-title">Нету товаров в корзине.</h4>
+                <a href="" class="btn-shop btn-arrow">Начать заполнять</a>
+            </div>
+        </div>
+        <div class="cart-bottom">
+            <a href="#" class="text">Наша политика доставки и возврата</a>
+        </div>
+
+    </div>
+</div>
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Поиск по названию</h4>
+            </div>
+            <div class="modal-body">
+                <div class="input-group">
+                    <form method="get" class="searchform" action="/search" role="search">
+                        <input type="hidden" name="type" value="product">
+                        <input type="text" name="q" class="form-control control-search">
+                        <span class="input-group-btn">
+                              <button class="btn btn-default button_search" type="button"><i data-toggle="dropdown"
+                                                                                             class="fa fa-search"></i></button>
+                            </span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="wrappage">
+    <header id="header" class="header-v1">
+        <div class="sticky-header text-center hidden-xs hidden-sm">
+        </div>
+        <div class="topbar">
+            <div class="container container-40">
+                <div class="topbar-left">
+                    <div class="topbar-option">
+                        <div class="topbar-account">
+                            <a href="#"><i class="icon-user f-15"></i></a>
+                        </div>
+                        <div class="topbar-wishlist">
+                            <a href="#">
+                                <i class="icon-heart f-15"></i>
+                                <span class="count wishlist-count">0</span>
+                            </a>
+                        </div>
+                        <div class="topbar-language dropdown">
+                            <a id="label1" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">
+
+                                <span>RU</span>
+                                <span class="fa fa-caret-down f-10"></span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="label1">
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">Кыргыский</a></li>
+                                <li><a href="#">Русский</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="logo hidden-xs hidden-sm">
+                    <a href="" title="home-logo"><img src="img/cosre.png" alt="logo" class="img-reponsive"></a>
+                </div>
+
+                <div class="topbar-right">
+                    <div class="topbar-option">
+                        <div class="topbar-currency dropdown">
+                            <a id="label2" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">
+
+                                <span>Сом</span>
+                                <span class="fa fa-caret-down f-10"></span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="label2">
+                                <li><a href="#">USD</a></li>
+                                <li><a href="#">Сом</a></li>
+                                <li><a href="#">Рубль</a></li>
+                            </ul>
+                        </div>
+                        <div class="topbar-search">
+                            <div class="search-popup dropdown" data-toggle="modal" data-target="#myModal">
+                                <a href="#"><i class="icon-magnifier f-15"></i></a>
+                            </div>
+                        </div>
+                        <div class="topbar-cart">
+                            <a href="#" class="icon-cart">
+                                <i class="icon-basket f-15"></i>
+                                <span class="count cart-count">0</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="header-top">
+            <div class="container container-40">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="logo-mobile hidden-lg hidden-md">
+                            <a href="" title="home-logo"><img src="img/cosre.png" alt="logo" class="img-reponsive"></a>
+                        </div>
+
+                        <button type="button" class="navbar-toggle icon-mobile" data-toggle="collapse"
+                                data-target="#myNavbar">
+                            <span class="icon-menu"></span>
+                        </button>
+                        <nav class="navbar main-menu">
+                            <div class="collapse navbar-collapse" id="myNavbar">
+                                <ul class="nav navbar-nav js-menubar">
+                                    <li class="level1 active dropdown"><a href="home_categories_slider_fullwidth.html">Каталог</a>
+                                    </li>
+                                    <li class="level1 dropdown hassub"><a href="single_product_affiliate.html">Польная
+                                        инфомация товара</a>
+                                    </li>
+                                    <li class="level1 active dropdown">
+                                        <a href="#">Пользователь</a>
+                                        <span class="plus js-plus-icon"></span>
+                                        <ul class="dropdown-menu menu-level-1">
+                                            <li class="level2"><a href="login.html" title="Login">Авторизация</a></li>
+                                            <li class="level2"><a href="register.html" title="Register">Регистрация</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="level1 dropdown hassub">
+                                        <a href="shop_standard_simple_hero_section_dark.html">Магазин</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content space-padding-tb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="customer-page">
+                        <div class="title-page">
+                            <h3>Авторизоваться</h3>
+                        </div>
+                        <form method="post" class="form-customer form-login">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Имя пользователя или адрес электронной почты *</label>
+                                <input type="email" class="form-control form-account" id="exampleInputEmail1">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Пароль *</label>
+                                <input type="password" class="form-control form-account" id="exampleInputPassword1">
+                            </div>
+                            <div class="form-check">
+                                <button type="submit" class="btn-login hover-white">Авторизоваться</button>
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input">
+                                    <span>Запомнить меня</span>
+                                </label>
+                                <a href="" class="lost-password">Забыли пароль?</a>
+                            </div>
+                        </form>
+                        <span class="divider"></span>
+                        <a href="register.html" class="btn link-button create-account hover-black">Завести аккаунт</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container container-42">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="newletter-form">
+                        <h3 class="footer-title text-center">НОВОСТНАЯ РАССЫЛКА</h3>
+                        <form action="#">
+                            <input type="text" name="s" placeholder="Email Adress..." class="form-control">
+                            <button type="submit" class="btn btn-submit">
+                                <i class="fa fa-angle-right"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                    <div class="social">
+                        <a href="#" title="twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="#" title="facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#" title="google plus">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                        <a href="#" title="Pinterest">
+                            <i class="fa fa-pinterest-p"></i>
+                        </a>
+                        <a href="#" title="rss">
+                            <i class="fa fa-rss"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<a href="#" class="scroll_top">Верх<span></span></a>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

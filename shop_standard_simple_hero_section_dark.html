@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Gold</title>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-slider.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="pushmenu pushmenu-left cart-box-container">
+        <div class="cart-list">
+            <span class="close-left js-close">x</span>
+            <h3 class="cart-title">Моя корзина</h3>
+            <div class="nocart-list">
+                <div class="empty-cart">
+                    <h4 class="nocart-title">Нету товаров в корзине.</h4>
+                    <a href="" class="btn-shop btn-arrow">Начать заполнять</a>
+                </div>
+            </div>
+            <div class="cart-bottom">
+                <a href="#" class="text">Наша политика доставки и возврата</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Поиск по названию</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group">
+                        <form method="get" class="searchform" action="/search" role="search">
+                            <input type="hidden" name="type" value="product">
+                            <input type="text" name="q" class="form-control control-search">
+                            <span class="input-group-btn">
+                              <button class="btn btn-default button_search" type="button"><i data-toggle="dropdown" class="fa fa-search"></i></button>
+                            </span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header id="header" class="header-v1">
+        <div class="topbar">
+            <div class="container container-40">
+                <div class="topbar-left">
+                    <div class="topbar-option">
+                        <div class="topbar-account">
+                            <a href="#"><i class="icon-user f-15"></i></a>
+                        </div>
+                        <div class="topbar-wishlist">
+                            <a href="#">
+                                <i class="icon-heart f-15"></i>
+                                <span class="count wishlist-count">0</span>
+                            </a>
+                        </div>
+                        <div class="topbar-language dropdown">
+                            <a id="label1" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            
+                              <span>RU</span>
+                              <span class="fa fa-caret-down f-10"></span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="label1">
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">Кыргызский</a></li>
+                                <li><a href="#">Русский</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="logo hidden-xs hidden-sm">
+                    <a href="" title="home-logo"><img src="img/cosre.png" alt="logo" class="img-reponsive"></a>
+                </div>
+
+                <div class="topbar-right">
+                    <div class="topbar-option">
+                        <div class="topbar-currency dropdown">
+                            <a id="label2" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            
+                              <span>Сом</span>
+                              <span class="fa fa-caret-down f-10"></span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="label2">
+                                <li><a href="#">Usd</a></li>
+                                <li><a href="#">Cом</a></li>
+                                <li><a href="#">Рубль</a></li>
+                            </ul>
+                        </div>
+                        <div class="topbar-search">
+                            <div class="search-popup dropdown" data-toggle="modal" data-target="#myModal">
+                                <a href="#"><i class="icon-magnifier f-15"></i></a>
+                            </div>
+                        </div>
+                        <div class="topbar-cart">
+                            <a href="#" class="icon-cart">
+                                <i class="icon-basket f-15"></i>
+                                <span class="count cart-count">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-top">
+            <div class="container container-40">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="logo-mobile hidden-lg hidden-md">
+                            <a href="" title="home-logo"><img src="img/cosre.png" alt="logo" class="img-reponsive"></a>
+                        </div>
+                        <!--end logo-->
+                        <button type="button" class="navbar-toggle icon-mobile" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-menu"></span>
+                        </button>
+                        <nav class="navbar main-menu">
+                            <div class="collapse navbar-collapse" id="myNavbar">
+                                <ul class="nav navbar-nav js-menubar">
+                                    <li class="level1 active dropdown"><a href="home_categories_slider_fullwidth.html">Каталог</a></li>
+                                    <li class="level1 dropdown hassub"><a href="single_product_affiliate.html">Польная инфомация товара</a>
+                                    </li>
+                                    <li class="level1 active dropdown">
+                                        <a href="#">Пользователь</a>
+                                        <span class="plus js-plus-icon"></span>
+                                        <ul class="dropdown-menu menu-level-1">
+                                            <li class="level2"><a href="login.html" title="Login">Авторизация</a></li>
+                                            <li class="level2"><a href="register.html" title="Register">Регистрация</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="level1 dropdown hassub">
+                                         <a href="shop_standard_simple_hero_section_dark.html">Магазин</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-heading">
+        <div class="banner-heading hero-dark">
+            <div class="heading-content v2">
+                <div class="container container-42">
+                    <h1 class="page-title v2 white">Магазин</h1>
+                    <ul class="breadcrumb v2 white">
+                        <li><a class="active" href="home_categories_slider_fullwidth.html">каталог</a></li>
+                        <li><a href="">Магазин товаров</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="nav nav-tabs nav-justified nav-filter white">
+            <ul class="owl-carousel owl-theme js-owl-category">
+                <li class="active"><a data-toggle="pill" href="#all">Свадьба</a></li>
+                <li><a data-toggle="pill" href="#women">Золото</a></li>
+                <li><a data-toggle="pill" href="#access">Серебро</a></li>
+                <li><a data-toggle="pill" href="#gagets">Бриллиант</a></li>
+                <li><a data-toggle="pill" href="#edit">Колье</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrap-filter">
+        <div class="wrap-filter-box wrap-filter-number">
+            <ul class="pagination">
+                <li class="active"><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li><a href="">6</a></li>
+            </ul>
+            <span class="total-count">1-12 из 30 Товар</span>
+        </div>
+        <div class="wrap-filter-box text-center view-mode">
+            <a class="col" href="#" onClick="return false;"><span class="icon-grid-img"></span></a>
+        </div>
+    </div>
+    <div class="product-standard product-grid">
+        <div class="container container-42">
+            <div class="tab-content">
+                <div id="all" class="tab-pane fade in active">
+                    <div class="row">
+                        <div class="col-md-15 col-sm-3 col-xs-6 product-item">
+                            <div class="product-images">
+                                <a href="#" class="hover-images effect"><img src="img/products/chortshirt.jpg" alt="photo" class="img-reponsive"></a>
+                                <a href="#" class="btn-add-wishlist ver2"><i class="icon-heart"></i></a>
+                                <a href="#" class="btn-quickview">Посмотреть</a>
+                            </div>
+                            <div class="product-info-ver2">
+                                <h3 class="product-title"><a href="#">Серебряное кольцо с фианитами</a></h3>
+                                <div class="product-after-switch">
+                                    <div class="product-price">5000 сом</div>
+                                    <div class="product-after-button">
+                                        <a href="#" class="addcart">Добавить в корзину</a>
+                                    </div>
+                                </div>
+                                <div class="rating-star">
+                                    <span class="star star-5"></span>
+                                    <span class="star star-4"></span>
+                                    <span class="star star-3"></span>
+                                    <span class="star star-2"></span>
+                                    <span class="star star-1"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-15 col-sm-3 col-xs-6 product-item">
+                            <div class="product-images">
+                                <a href="#" class="hover-images effect"><img src="img/products/hat_2.jpg" alt="photo" class="img-reponsive">
+                                </a>
+                                <div class="ribbon-sale ver2"><span>sale</span></div>
+                                <a href="#" class="btn-add-wishlist ver2"><i class="icon-heart"></i></a>
+                                <a href="#" class="btn-quickview">Посмотреть</a>
+                            </div>
+                            <div class="product-info-ver2">
+                                <h3 class="product-title"><a href="#">Серебряное кольцо с фианитами</a></h3>
+                                <div class="product-after-switch">
+                                    <div class="product-price">2000 сом</div>
+                                    <div class="product-after-button">
+                                        <a href="#" class="addcart">Добавить в корзину</a>
+                                    </div>
+                                </div>
+                                <div class="rating-star">
+                                    <span class="star star-5"></span>
+                                    <span class="star star-4"></span>
+                                    <span class="star star-3"></span>
+                                    <span class="star star-2"></span>
+                                    <span class="star star-1"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-15 col-sm-3 col-xs-6 product-item">
+                            <div class="product-images">
+                                <a href="#" class="hover-images effect"><img src="img/products/tshirt.jpg" alt="photo" class="img-reponsive">
+                               
+                                </a>
+                                <div class="ribbon-new ver2"><span>new</span></div>
+                                <a href="#" class="btn-add-wishlist ver2"><i class="icon-heart"></i></a>
+                                <a href="#" class="btn-quickview">Посмотреть</a>
+                            </div>
+                            <div class="product-info-ver2">
+                                <h3 class="product-title"><a href="#">Серебряное кольцо с эмалью</a></h3>
+                                <div class="product-after-switch">
+                                    <div class="product-price">3000 сом</div>
+                                    <div class="product-after-button">
+                                        <a href="#" class="addcart">Добавить в корзину</a>
+                                    </div>
+                                </div>
+                                <div class="rating-star">
+                                    <span class="star star-5"></span>
+                                    <span class="star star-4"></span>
+                                    <span class="star star-3"></span>
+                                    <span class="star star-2"></span>
+                                    <span class="star star-1"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-15 col-sm-3 col-xs-6 product-item">
+                            <div class="product-images">
+                                <a href="#" class="hover-images effect"><img src="img/products/sneaker.jpg" alt="photo" class="img-reponsive">
+                                
+                                </a>
+                                <div class="ribbon-sale ver2"><span>Дорогой</span></div>
+                                <a href="#" class="btn-add-wishlist ver2"><i class="icon-heart"></i></a>
+                                <a href="#" class="btn-quickview">Посмотреть</a>
+                            </div>
+                            <div class="product-info-ver2">
+                                <h3 class="product-title"><a href="#">Золотое обручальное кольцо с бриллиантами</a></h3>
+                                <div class="product-after-switch">
+                                    <div class="product-price">44000 сом</div>
+                                    <div class="product-after-button">
+                                        <a href="#" class="addcart">Добавить в корзину</a>
+                                    </div>
+                                </div>
+                                <div class="rating-star">
+                                    <span class="star star-5"></span>
+                                    <span class="star star-4"></span>
+                                    <span class="star star-3"></span>
+                                    <span class="star star-2"></span>
+                                    <span class="star star-1"></span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-15 col-sm-3 col-xs-6 product-item">
+                            <div class="product-images">
+                                <a href="#" class="hover-images effect"><img src="img/products/longcoat_g.jpg" alt="photo" class="img-reponsive"></a>
+                                <a href="#" class="btn-add-wishlist ver2"><i class="icon-heart"></i></a>
+                                <a href="#" class="btn-quickview">Посмотреть</a>
+                            </div>
+                            <div class="product-info-ver2">
+                                <h3 class="product-title"><a href="#">Золотое кольцо с бриллиантами</a></h3>
+                                <div class="product-after-switch">
+                                    <div class="product-price">20000 сом</div>
+                                    <div class="product-after-button">
+                                        <a href="#" class="addcart">Добавить в корзину</a>
+                                    </div>
+                                </div>
+                                <div class="rating-star">
+                                    <span class="star star-5"></span>
+                                    <span class="star star-4"></span>
+                                    <span class="star star-3"></span>
+                                    <span class="star star-2"></span>
+                                    <span class="star star-1"></span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-15 col-sm-3 col-xs-6 product-item">
+                            <div class="product-images">
+                                <a href="#" class="hover-images effect"><img src="img/products/highheels.jpg" alt="photo" class="img-reponsive"></a>
+                                <a href="#" class="btn-add-wishlist ver2"><i class="icon-heart"></i></a>
+                                <a href="#" class="btn-quickview">Посмотреть</a>
+                            </div>
+                            <div class="product-info-ver2">
+                                <h3 class="product-title"><a href="#">Серебряное шейное украшение с фианитами</a></h3>
+                                <div class="product-after-switch">
+                                    <div class="product-price">2000 сом</div>
+                                    <div class="product-after-button">
+                                        <a href="#" class="addcart">Добавить в корзину</a>
+                                    </div>
+                                </div>
+                                <div class="rating-star">
+                                    <span class="star star-5"></span>
+                                    <span class="star star-4"></span>
+                                    <span class="star star-3"></span>
+                                    <span class="star star-2"></span>
+                                    <span class="star star-1"></span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-15 col-sm-3 col-xs-6 product-item">
+                            <div class="product-images">
+                                <a href="#" class="hover-images effect"><img src="img/products/hoodie.jpg" alt="photo" class="img-reponsive">
+                                
+                                </a>
+                                <div class="ribbon-sale ver2"><span>sale</span></div>
+                                <a href="#" class="btn-add-wishlist ver2"><i class="icon-heart"></i></a>
+                                <a href="#" class="btn-quickview">Посмотреть</a>
+                            </div>
+                            <div class="product-info-ver2">
+                                <h3 class="product-title"><a href="#">Серебряное колье с фианитами и сапфирами</a></h3>
+                                <div class="product-after-switch">
+                                    <div class="product-price">5999 сом</div>
+                                    <div class="product-after-button">
+                                        <a href="#" class="addcart">Добавить в корзину</a>
+                                    </div>
+                                </div>
+                                <div class="rating-star">
+                                    <span class="star star-5"></span>
+                                    <span class="star star-4"></span>
+                                    <span class="star star-3"></span>
+                                    <span class="star star-2"></span>
+                                    <span class="star star-1"></span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-15 col-sm-3 col-xs-6 product-item">
+                            <div class="product-images">
+                                <a href="#" class="hover-images effect"><img src="img/products/bag_1.jpg" alt="photo" class="img-reponsive"></a>
+                                <a href="#" class="btn-add-wishlist ver2"><i class="icon-heart"></i></a>
+                                <a href="#" class="btn-quickview">Посмотреть</a>
+                            </div>
+                            <div class="product-info-ver2">
+                                <h3 class="product-title"><a href="#">Серебряное шейное украшение с фианитами</a></h3>
+                                <div class="product-after-switch">
+                                    <div class="product-price">7999 сом</div>
+                                    <div class="product-after-button">
+                                        <a href="#" class="addcart">Добавить в корзину</a>
+                                    </div>
+                                </div>
+                                <div class="rating-star">
+                                    <span class="star star-5"></span>
+                                    <span class="star star-4"></span>
+                                    <span class="star star-3"></span>
+                                    <span class="star star-2"></span>
+                                    <span class="star star-1"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-15 col-sm-3 col-xs-6 product-item">
+                            <div class="product-images">
+                                <a href="#" class="hover-images effect"><img src="img/products/long.jpg" alt="photo" class="img-reponsive"></a>
+                                <a href="#" class="btn-add-wishlist ver2"><i class="icon-heart"></i></a>
+                                <a href="#" class="btn-quickview">Посмотреть</a>
+                            </div>
+                            <div class="product-info-ver2">
+                                <h3 class="product-title"><a href="#">Золотые серьги</a></h3>
+                                <div class="product-after-switch">
+                                    <div class="product-price">6000 сом</div>
+                                    <div class="product-after-button">
+                                        <a href="#" class="addcart">Добавить в корзину</a>
+                                    </div>
+                                </div>
+                                <div class="rating-star">
+                                    <span class="star star-5"></span>
+                                    <span class="star star-4"></span>
+                                    <span class="star star-3"></span>
+                                    <span class="star star-2"></span>
+                                    <span class="star star-1"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-15 col-sm-3 col-xs-6 product-item">
+                            <div class="product-images">
+                                <a href="#" class="hover-images effect"><img src="img/products/sunglasses_1.jpg" alt="photo" class="img-reponsive"></a>
+                                <a href="#" class="btn-add-wishlist ver2"><i class="icon-heart"></i></a>
+                                <a href="#" class="btn-quickview">Посмотреть</a>
+                            </div>
+                            <div class="product-info-ver2">
+                                <h3 class="product-title"><a href="#">Золотое кольцо с изумрудом и бриллиантами</a></h3>
+                                <div class="product-after-switch">
+                                    <div class="product-price">15000 сом</div>
+                                    <div class="product-after-button">
+                                        <a href="#" class="addcart">Добавить в корзину</a>
+                                    </div>
+                                </div>
+                                <div class="rating-star">
+                                    <span class="star star-5"></span>
+                                    <span class="star star-4"></span>
+                                    <span class="star star-3"></span>
+                                    <span class="star star-2"></span>
+                                    <span class="star star-1"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container container-42">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="newletter-form">
+                        <h3 class="footer-title text-center">Новостная рассылка</h3>
+                        <form action="#">
+                            <input type="text" name="s" placeholder="Email Adress..." class="form-control">
+                            <button type="submit" class="btn btn-submit">
+                                <i class="fa fa-angle-right"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                    <div class="social">
+                        <a href="#" title="twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="#" title="facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#" title="google plus">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                        <a href="#" title="Pinterest">
+                            <i class="fa fa-pinterest-p"></i>
+                        </a>
+                        <a href="#" title="rss">
+                            <i class="fa fa-rss"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="scroll_top">Верх<span></span></a>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap-slider.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
